@@ -13,7 +13,7 @@ const offScreenStyle = {
 };
 
 const MessageBlock = ({ message, 'aria-live': ariaLive }) => (
-  <div style={offScreenStyle} role="log" aria-live={ariaLive}>
+  <div style={offScreenStyle} role="log" aria-live={ariaLive} aria-relevant={"additions text"}>
     {message ? message : ''}
   </div>
 );
